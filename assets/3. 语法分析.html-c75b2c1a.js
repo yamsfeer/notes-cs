@@ -1,0 +1,12 @@
+import{_ as a}from"./plugin-vue_export-helper-c27b6911.js";import{o as s,c as n,e}from"./app-706bfe03.js";const t={},p=e(`<h1 id="语法分析" tabindex="-1"><a class="header-anchor" href="#语法分析" aria-hidden="true">#</a> 语法分析</h1><h2 id="简介" tabindex="-1"><a class="header-anchor" href="#简介" aria-hidden="true">#</a> 简介</h2><p><strong>语法分析的任务就是将词法分析得到的token流转化为抽象语法树(AST)。</strong></p><p><img src="https://raw.githubusercontent.com/yamsfeer/pic-bed/master/008i3skNgy1gtlazf4dboj60dq021q2v02.jpg" alt=""></p><p>针对以下代码：</p><div class="language-c" data-ext="c"><pre class="language-c"><code><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>x <span class="token operator">&gt;</span> <span class="token number">5</span><span class="token punctuation">)</span>
+  y <span class="token operator">=</span> <span class="token string">&quot;h&quot;</span>
+<span class="token keyword">else</span>
+  z <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span>
+</code></pre></div><p>不难看出，上面代码存在几个语法错误。语法分析的作用之一就是对针对语法错误的报错。</p><div class="language-text" data-ext="text"><pre class="language-text"><code>Syntax Error: line 1, missing )
+Syntax Error: line 2, missing ;
+Syntax Error: line 4, expecting ; got ,
+</code></pre></div><p>程序员可以根据语法报错提示信息进行修改。</p><div class="language-c" data-ext="c"><pre class="language-c"><code><span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">&gt;</span> <span class="token number">5</span><span class="token punctuation">)</span>
+  y <span class="token operator">=</span> <span class="token string">&quot;h&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">else</span>
+  z <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+</code></pre></div><p>语法分析需要将修改正确的代码转换成树状结构，如下图：</p><p><img src="https://raw.githubusercontent.com/yamsfeer/pic-bed/master/008i3skNgy1gsy0hyj8smj30as051q2z.jpg" alt=""></p><h2 id="语法分析的路线图" tabindex="-1"><a class="header-anchor" href="#语法分析的路线图" aria-hidden="true">#</a> 语法分析的路线图</h2><ul><li>数学理论：上下文无关文法（<em>CFG</em>），<em>CFG</em>是描述语言语法规则的数学工具</li><li>自顶向下分析 <ul><li>递归下降分析算法，可用于手工编写语法分析器</li><li>LL 分析算法，可用于语法分析器生成器</li></ul></li><li>自底向上分析 <ul><li>LR 分析算法</li></ul></li></ul>`,14),o=[p];function c(r,l){return s(),n("div",null,o)}const d=a(t,[["render",c],["__file","3. 语法分析.html.vue"]]);export{d as default};

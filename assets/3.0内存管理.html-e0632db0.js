@@ -1,0 +1,1 @@
+import{_ as t}from"./plugin-vue_export-helper-c27b6911.js";import{o as _,c as a,a as e,b as o}from"./app-706bfe03.js";const r={},c=e("h1",{id:"内存管理",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#内存管理","aria-hidden":"true"},"#"),o(" 内存管理")],-1),s=[c];function n(d,i){return _(),a("div",null,s)}const f=t(r,[["render",n],["__file","3.0内存管理.html.vue"]]);export{f as default};
