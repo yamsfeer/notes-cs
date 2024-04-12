@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://yamsfeer.github.io/notes-cs/sitemap.xml
