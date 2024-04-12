@@ -1,0 +1,23 @@
+{
+  "name": "notes-cs",
+  "version": "1.0.0",
+  "description": "yamsfeer's computer science notes",
+  "author": "yamsfeer",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "start": "vuepress-vite dev .",
+    "build": "vuepress-vite build .",
+    "clean-dev": "vuepress-vite dev . --clean-cache",
+    "update-package": "pnpm dlx vp-update"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.9",
+    "flowchart.ts": "^3.0.0",
+    "katex": "^0.16.10",
+    "mermaid": "^10.9.0",
+    "vue": "^3.4.21",
+    "vuepress": "2.0.0-rc.9",
+    "vuepress-theme-hope": "2.0.0-rc.36"
+  }
+}
