@@ -5,6 +5,7 @@ import theme from './theme.js'
 export default defineUserConfig({
   base: '/notes-cs/',
   title: 'yamsfeer',
+  lang: 'zh-CN',
 
   theme,
 
